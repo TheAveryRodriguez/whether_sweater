@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Things to cover:
 
-Things you may want to cover:
+* Learning Goals
 
-* Ruby version
+* How can someone clone and set up the app
 
-* System dependencies
+* Where they can get their own API Keys
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Happy Path endpoint use
 
 * ...

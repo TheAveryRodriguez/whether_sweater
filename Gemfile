@@ -23,14 +23,14 @@ gem "puma", "~> 5.0"
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 gem "bcrypt", "~> 3.1.7"
+gem "faraday"
+gem "figaro"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
-
-gem "jsonapi-serializer"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -49,6 +49,7 @@ group :development, :test do
   gem "faker"
   gem "rspec-rails"
   gem "pry"
+  gem "jsonapi-serializer"
 end
 
 group :development do

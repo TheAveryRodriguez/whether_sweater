@@ -6,8 +6,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v0 do
-      get "/forecast", only: [:forecast]
-      get "/"
+      resource :forecast, only: [:show]
     end
   end
 end

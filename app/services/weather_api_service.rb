@@ -1,0 +1,2 @@
+class WeatherApiService
+end

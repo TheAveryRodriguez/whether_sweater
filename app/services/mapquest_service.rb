@@ -4,8 +4,12 @@ class MapquestService
   end
 
   def self.get_coordinates(location)
-    response = conn.get("/key=#{ENV["mapquest_api"]}&location=#{location}")
+    response = conn.get("/key=#{consumer_key}&location=#{location}")
 
     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.consumer_key
+    Rails.application.credentials.mapquest_api.consumer_key
   end
 end

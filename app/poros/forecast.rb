@@ -1,17 +1,17 @@
 class Forecast
-  attr_reader :id, :location, :current_weather, :daily_weather, :hourly_weather
+  attr_reader :id, :forecast_data, :location
 
-  def initialize(forecast, location)
+  def initialize(forecast_data, location)
     @id = nil
+    @forecast_data = forecast
     @location = location
-    @current_weather = current_weather(forecast[:current])
-    @daily_weather = daily_weather(forecast[:daily])
-    @hourly_weather = hourly_weather(forecast[:hourly])
+    # @current_weather = current_weather(forecast[:current])
+    # @daily_weather = daily_weather(forecast[:daily])
+    # @hourly_weather = hourly_weather(forecast[:hourly])
   end
 
-  private
-
-  def current_weather(current)
+  def current_weather
+    current = forecast[:current]
     {
       last_updated: Time.at(current[:last_updated]),
       temperature: current[:temp_f],
@@ -24,27 +24,31 @@ class Forecast
     }
   end
 
-  def daily_weather(daily)
+  def daily_weather
+    daily = forecast[:forecast][:forecastday]
+
     daily[0..4].map do |day|
       {
-        date: Time.at(day[:forecast][:forecastday][:date]),
-        sunrise: Time.at(day[:forecast][:forecastday][:astro][:sunrise]),
-        sunset: Time.at(day[:forecast][:forecastday][:astro][:sunset]),
-        max_temp: day[:forecast][:forecastday][:day][:maxtemp_f],
-        min_temp: day[:forecast][:forecastday][:day][:mintemp_f],
-        conditions: day[:forecast][:forecastday][:day][:condition][:text],
-        icon: day[:forecast][:forecastday][:day][:condition][:icon]
+        date: Time.at(day[:date]),
+        sunrise: Time.at(day[:astro][:sunrise]),
+        sunset: Time.at(day[:astro][:sunset]),
+        max_temp: day[:day][:maxtemp_f],
+        min_temp: day[:day][:mintemp_f],
+        conditions: day[:day][:condition][:text],
+        icon: day[:day][:condition][:icon]
       }
     end
   end
 
-  def hourly_weather(hourly)
+  def hourly_weather
+    hourly = forecast[:forecast][:forecastday][:hour]
+
     hourly[0..7].map do |hour|
       {
-        time: Time.at(hour[:forecast][:forecastday][:hour][:time]),
-        temperature: hour[:forecast][:forecastday][:hour][:temp_f],
-        conditions: hour[:forecast][:forecastday][:hour][:condition][:text],
-        icon: hour[:forecast][:forecastday][:hour][:condition][:icon]
+        time: Time.at(hour[:time]),
+        temperature: hour[:temp_f],
+        conditions: hour[:condition][:text],
+        icon: hour[:condition][:icon]
       }
     end
   end

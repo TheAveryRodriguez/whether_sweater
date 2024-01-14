@@ -13,15 +13,13 @@ class Forecast
 
   def current_weather(current)
     {
-      datetime: Time.at(current[:dt]),
-      sunrise: Time.at(current[:sunrise]),
-      sunset: Time.at(current[:sunset]),
-      temperature: current[:temp],
-      feels_like: current[:feels_like],
+      last_updated: Time.at(current[:last_updated]),
+      temperature: current[:temp_f],
+      feels_like: current[:feels_like_f],
       humidity: current[:humidity],
-      uvi: current[:uvi],
-      visibility: current[:visibility],
-      conditions: current[:weather][0][:description],
+      uvi: current[:uv],
+      visibility: current[:vis_miles],
+      conditions: current[:condition][:text],
       icon: current[:weather][0][:icon]
     }
   end
@@ -29,13 +27,13 @@ class Forecast
   def daily_weather(daily)
     daily[0..4].map do |day|
       {
-        date: Time.at(day[:dt]),
-        sunrise: Time.at(day[:sunrise]),
-        sunset: Time.at(day[:sunset]),
-        max_temp: day[:temp][:max],
-        min_temp: day[:temp][:min],
-        conditions: day[:weather][0][:description],
-        icon: day[:weather][0][:icon]
+        date: Time.at(day[:forecast][:forecastday][:date]),
+        sunrise: Time.at(day[:forecast][:forecastday][:astro][:sunrise]),
+        sunset: Time.at(day[:forecast][:forecastday][:astro][:sunset]),
+        max_temp: day[:forecast][:forecastday][:day][:maxtemp_f],
+        min_temp: day[:forecast][:forecastday][:day][:mintemp_f],
+        conditions: day[:forecast][:forecastday][:day][:condition][:text],
+        icon: day[:forecast][:forecastday][:day][:condition][:icon]
       }
     end
   end
@@ -43,10 +41,10 @@ class Forecast
   def hourly_weather(hourly)
     hourly[0..7].map do |hour|
       {
-        time: Time.at(hour[:dt]),
-        temperature: hour[:temp],
-        conditions: hour[:weather][0][:description],
-        icon: hour[:weather][0][:icon]
+        time: Time.at(hour[:forecast][:forecastday][:hour][:time]),
+        temperature: hour[:forecast][:forecastday][:hour][:temp_f],
+        conditions: hour[:forecast][:forecastday][:hour][:condition][:text],
+        icon: hour[:forecast][:forecastday][:hour][:condition][:icon]
       }
     end
   end

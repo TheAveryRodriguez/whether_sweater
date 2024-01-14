@@ -1,5 +1,5 @@
 class ForecastFacade
-  def self.get_forecast(location)
+  def self.forecast_info(location)
     coordinates = MapquestService.get_coordinates(location)
     forecast = WeatherService.get_forecast(coordinates)
 

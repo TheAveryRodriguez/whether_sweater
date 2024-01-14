@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Forecast" do
   context "happy path endpoints" do
     it "can get merchants for case insensitive name search" do
-      create(:merchant, name: "Channel Catfish")
+      # create(:merchant, name: "Channel Catfish")
 
       get "/api/v0/forecast"
 

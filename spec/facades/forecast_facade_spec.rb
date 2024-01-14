@@ -15,7 +15,7 @@ RSpec.describe ForecastFacade, type: :facade do
       forecast = ForecastFacade.forecast_info(location)
       expect(forecast).to be_a(Forecast)
       expect(forecast.location).to eq(location)
-      expect(forecast.data).to eq(forecast)
+      expect(forecast.forecast_data).to eq(forecast)
     end
   end
 end

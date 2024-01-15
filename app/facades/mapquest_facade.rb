@@ -1,5 +1,5 @@
 class MapquestFacade
-  def self.get_coordinates(location)
+  def self.get_location(location)
     coordinates = MapquestService.get_coordinates(location)
     results = coordinates[:results][0][:locations][0][:latLng]
 

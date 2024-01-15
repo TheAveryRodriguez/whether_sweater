@@ -1,15 +1,16 @@
 class WeatherService
-  def self.conn
-    Faraday.new(url: "http//api.weatherapi.com/v1")
+  def self.get_forecast(location)
+    get_url("forecast.json?q=#{location.lat}+#{location.lng}&days=5")
   end
 
-  def self.get_forecast(coordinates)
-    response = conn.get("/forecast.json?key=#{api_key}&q=#{coordinates}&days=5")
-
+  def self.get_url(url)
+    response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
   end
 
-  def self.api_key
-    Rails.application.credentials.weather_api.api_key
+  def self.conn
+    Faraday.new(url: "http://api.weatherapi.com/v1/") do |faraday|
+      faraday.headers["key"] = Rails.application.credentials.weather_api.api_key
+    end
   end
 end

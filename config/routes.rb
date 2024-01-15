@@ -8,5 +8,9 @@ Rails.application.routes.draw do
     namespace :v0 do
       get "/forecast", to: "forecasts#index"
     end
+
+    namespace :v1 do
+      get "/munchies", to: "munchies#index"
+    end
   end
 end

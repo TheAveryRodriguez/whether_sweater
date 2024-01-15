@@ -15,7 +15,7 @@ RSpec.describe "Index", type: :request do
 
         expect(response_data[:data]).to have_key(:type)
         expect(response_data[:data][:type]).to be_a(String)
-        expect(response_data[:data][:type]).to eql("forecast")
+        expect(response_data[:data][:type]).to eq("forecast")
 
         current = response_data[:data][:attributes][:current_weather]
 

@@ -95,8 +95,8 @@ RSpec.describe "Index", type: :request do
       end
     end
 
-    context "When a valid location is used" do
-      it "should return the details the weather", :vcr do
+    context "When an invalid location is used" do
+      it "should not return the details the weather", :vcr do
         get "/api/v0/forecast?location="
 
         response_data = JSON.parse(response.body, symbolize_names: true)

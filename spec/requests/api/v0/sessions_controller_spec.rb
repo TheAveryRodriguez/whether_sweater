@@ -61,7 +61,7 @@ RSpec.describe "Create", type: :request do
 
         headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
         payload = {
-          email: "wrong@example.com",
+          email: "wrong@email.com",
           password: "password"
         }
         body = JSON.generate(payload)
@@ -92,7 +92,7 @@ RSpec.describe "Create", type: :request do
         headers = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}
         payload = {
           email: "email@email.com",
-          password: "iamhacker"
+          password: "wrongo"
         }
         body = JSON.generate(payload)
 

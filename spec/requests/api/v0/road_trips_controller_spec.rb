@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe "Create", type: :request do
-  describe "GET /api/v0/road_trip", :vcr do
+  describe "POST /api/v0/road_trip", :vcr do
     context "When a location is used" do
       it "should return info for the roadtrip if location is valid", :vcr do
         headers_user = {"CONTENT_TYPE" => "application/json", "Accept" => "application/json"}

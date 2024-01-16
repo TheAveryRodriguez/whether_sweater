@@ -24,5 +24,16 @@ RSpec.describe MapquestService do
         expect(location_data[:latLng][:lng]).to be_a(Float)
       end
     end
+
+    context ".get_directions", :vcr do
+      it "gets directions from an origin to a destination" do
+        route_info = MapquestService.get_directions("conway,ar", "dallas,tx")
+
+        expect(route_info).to be_a(Hash)
+
+        expect(route_info[:route]).to have_key(:formattedTime)
+        expect(route_info[:route][:formattedTime]).to be_a(String)
+      end
+    end
   end
 end

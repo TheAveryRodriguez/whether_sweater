@@ -1,2 +1,2 @@
-class Api::V0::RoadTripController < ApplicationController
+class Api::V0::RoadtripController < ApplicationController
 end

@@ -1,2 +1,2 @@
-class RoadTripSerializer
+class RoadtripSerializer
 end

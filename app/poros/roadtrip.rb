@@ -1,2 +1,2 @@
-class RoadTrip
+class Roadtrip
 end

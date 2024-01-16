@@ -1,4 +1,4 @@
-class UserSerialize
+class UserSerializer
   def self.user_format(user)
     {
       data: {

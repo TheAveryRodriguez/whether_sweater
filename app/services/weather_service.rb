@@ -13,4 +13,8 @@ class WeatherService
       faraday.headers["key"] = Rails.application.credentials.weather_api.api_key
     end
   end
+
+  def self.specific_forecast(location, hour)
+    get_url("forecast.json?q=#{location.lat}+#{location.lng}&hour=#{hour}")
+  end
 end

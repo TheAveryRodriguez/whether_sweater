@@ -21,6 +21,13 @@ RSpec.describe Route do
     expect(@route.destination).to eq("Dallas,TX")
   end
 
+  context "impossibe?(time)" do
+    it "returns either the time or impossible depending on the API repsonse for time" do
+      expect(@route.impossible?("3:33:33")).to eq("3:33:33")
+      expect(@route.impossible?(nil)).to eq("Impossible")
+    end
+  end
+
   context "format_datetime(time)" do
     it "give date with hours" do
       expect(@route.format_datetime("3:33:33")).to eq("2024-01-16 05")
@@ -30,13 +37,6 @@ RSpec.describe Route do
   context "format_hour(time)" do
     it "takes travel time and makes in a integer" do
       expect(@route.format_hour("3:33:33")).to eq(5)
-    end
-  end
-
-  context "impossibe?(time)" do
-    it "returns either the time or impossible depending on the API repsonse for time" do
-      expect(@route.impossible?("3:33:33")).to eq("3:33:33")
-      expect(@route.impossible?(nil)).to eq("Impossible")
     end
   end
 end

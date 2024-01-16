@@ -1,11 +1,11 @@
 class Api::V0::RoadTripsController < ApplicationController
   def create
-    if Roadtrip.valid_key?(user_params)
+    if Roadtrip.valid_key?(params)
       @route_info = RoadtripFacade.get_roadtrip(params[:origin], params[:destination])
 
       @location_info = MapquestFacade.get_location(params[:destination])
 
-      @weather = ForecastFacade.travel_weather(@location_info, @roadtrip_info.hour)
+      @weather = ForecastFacade.travel_weather(@location_info, @route_info.hour)
 
       render json: RoadtripSerializer.create_roadtrip(@route_info, @weather)
     end

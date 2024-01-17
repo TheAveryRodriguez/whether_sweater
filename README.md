@@ -1,6 +1,6 @@
 # README
 
-Whether, Sweater?
+Whether, Sweater? is an application designed to tell you the forecast for any given location. You can create a user account, login and even create roadtrips. When you do that we will tell you how long the trip will take and the expected forecast for your destination
 
 ## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
@@ -34,3 +34,12 @@ Whether, Sweater?
 - Run "rails db:{drop, create, migrate}"
 
 - Run "bundle exec rspec" (you should have 43 passing tests)
+
+## Endpoints
+- GET http://localhost:3000/api/v0/forecast?location=<LOCATION>
+
+- POST http://localhost:3000/api/v0/users
+
+- POST http://localhost:3000/api/v0/sessions
+
+- POST http://localhost:3000/api/v0/road_trip

@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2024 04:05:26 GMT
+      - Wed, 17 Jan 2024 20:04:12 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -31,17 +31,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '1000000000'
       X-Ratelimit-Remaining-2628000:
-      - '999999864'
+      - '999999844'
       Ratelimit-Limit:
       - '1000000000'
       Ratelimit-Remaining:
-      - '999999864'
+      - '999999844'
       Ratelimit-Reset:
-      - '107674'
+      - '50148'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - a53be9c0-b4ed-11ee-966e-dba86c595b85
+      - 95409c10-b573-11ee-a9e8-bd4e1abfb54b
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -52,7 +52,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
-  recorded_at: Wed, 17 Jan 2024 04:05:26 GMT
+  recorded_at: Wed, 17 Jan 2024 20:04:12 GMT
 - request:
     method: get
     uri: https://www.mapquestapi.com/geocoding/v1/address?location=Moscow,RU
@@ -74,7 +74,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2024 04:05:27 GMT
+      - Wed, 17 Jan 2024 20:04:13 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -84,17 +84,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '1000000000'
       X-Ratelimit-Remaining-2628000:
-      - '999999865'
+      - '999999841'
       Ratelimit-Limit:
       - '1000000000'
       Ratelimit-Remaining:
-      - '999999865'
+      - '999999841'
       Ratelimit-Reset:
-      - '107673'
+      - '50147'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - a5813020-b4ed-11ee-8e38-0b5b11700dec
+      - 959d3b00-b573-11ee-a844-db888e23fefa
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -103,10 +103,10 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJNb3Njb3csUlUifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiTW9zY293IiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6Ik1vc2NvdyIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IiIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiUlUiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NTUuNzU2OTYsImxuZyI6MzcuNjE1MDJ9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NTUuNzU2OTYsImxuZyI6MzcuNjE1MDJ9LCJtYXBVcmwiOiIifV19XX0=
-  recorded_at: Wed, 17 Jan 2024 04:05:27 GMT
+  recorded_at: Wed, 17 Jan 2024 20:04:13 GMT
 - request:
     method: get
-    uri: http://api.weatherapi.com/v1/forecast.json?hour=22&q=55.75696%2037.61502
+    uri: http://api.weatherapi.com/v1/forecast.json?hour=14&q=55.75696%2037.61502
     body:
       encoding: US-ASCII
       string: ''
@@ -125,7 +125,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 17 Jan 2024 04:05:27 GMT
+      - Wed, 17 Jan 2024 20:04:13 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -135,7 +135,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1070
+      - BunnyCDN-IL1-1069
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -149,9 +149,9 @@ http_interactions:
       Via:
       - 1.1 varnish (Varnish/6.0)
       X-Weatherapi-Qpm-Left:
-      - '4999976'
+      - '4999961'
       X-Varnish:
-      - '11993749'
+      - '547357288'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -159,18 +159,18 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - 01/17/2024 04:05:27
+      - 01/17/2024 20:04:13
       Cdn-Edgestorageid:
-      - '941'
+      - '940'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 3774c1c45a5e679b0827cf2652c7b5f6
+      - fc0146762f17d0338745738a81468480
       Cdn-Cache:
       - MISS
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        eyJsb2NhdGlvbiI6eyJuYW1lIjoi0JzQvtGB0LrQstCwIiwicmVnaW9uIjoiTW9zY293IENpdHkiLCJjb3VudHJ5IjoiUnVzc2lhIiwibGF0Ijo1NS43NiwibG9uIjozNy42MiwidHpfaWQiOiJFdXJvcGUvTW9zY293IiwibG9jYWx0aW1lX2Vwb2NoIjoxNzA1NDY0Mjg4LCJsb2NhbHRpbWUiOiIyMDI0LTAxLTE3IDc6MDQifSwiY3VycmVudCI6eyJsYXN0X3VwZGF0ZWRfZXBvY2giOjE3MDU0NjQwMDAsImxhc3RfdXBkYXRlZCI6IjIwMjQtMDEtMTcgMDc6MDAiLCJ0ZW1wX2MiOi05LjAsInRlbXBfZiI6MTUuOCwiaXNfZGF5IjowLCJjb25kaXRpb24iOnsidGV4dCI6IkxpZ2h0IHNub3ciLCJpY29uIjoiLy9jZG4ud2VhdGhlcmFwaS5jb20vd2VhdGhlci82NHg2NC9uaWdodC8zMjYucG5nIiwiY29kZSI6MTIxM30sIndpbmRfbXBoIjoxOS4yLCJ3aW5kX2twaCI6MzEuMCwid2luZF9kZWdyZWUiOjI2MCwid2luZF9kaXIiOiJXIiwicHJlc3N1cmVfbWIiOjk5NS4wLCJwcmVzc3VyZV9pbiI6MjkuMzgsInByZWNpcF9tbSI6MC4wMywicHJlY2lwX2luIjowLjAsImh1bWlkaXR5Ijo3MywiY2xvdWQiOjc1LCJmZWVsc2xpa2VfYyI6LTE3LjIsImZlZWxzbGlrZV9mIjoxLjEsInZpc19rbSI6MTAuMCwidmlzX21pbGVzIjo2LjAsInV2IjoxLjAsImd1c3RfbXBoIjoyMC43LCJndXN0X2twaCI6MzMuM30sImZvcmVjYXN0Ijp7ImZvcmVjYXN0ZGF5IjpbeyJkYXRlIjoiMjAyNC0wMS0xNyIsImRhdGVfZXBvY2giOjE3MDU0NDk2MDAsImRheSI6eyJtYXh0ZW1wX2MiOi0xMC4yLCJtYXh0ZW1wX2YiOjEzLjYsIm1pbnRlbXBfYyI6LTEzLjYsIm1pbnRlbXBfZiI6Ny42LCJhdmd0ZW1wX2MiOi0xMS41LCJhdmd0ZW1wX2YiOjExLjQsIm1heHdpbmRfbXBoIjoxNC4zLCJtYXh3aW5kX2twaCI6MjMuMCwidG90YWxwcmVjaXBfbW0iOjAuNCwidG90YWxwcmVjaXBfaW4iOjAuMDIsInRvdGFsc25vd19jbSI6MC4yNywiYXZndmlzX2ttIjo5LjYsImF2Z3Zpc19taWxlcyI6NS4wLCJhdmdodW1pZGl0eSI6ODksImRhaWx5X3dpbGxfaXRfcmFpbiI6MCwiZGFpbHlfY2hhbmNlX29mX3JhaW4iOjYzLCJkYWlseV93aWxsX2l0X3Nub3ciOjAsImRhaWx5X2NoYW5jZV9vZl9zbm93IjozOSwiY29uZGl0aW9uIjp7InRleHQiOiJMaWdodCBmcmVlemluZyByYWluIiwiaWNvbiI6Ii8vY2RuLndlYXRoZXJhcGkuY29tL3dlYXRoZXIvNjR4NjQvZGF5LzMxMS5wbmciLCJjb2RlIjoxMTk4fSwidXYiOjEuMH0sImFzdHJvIjp7InN1bnJpc2UiOiIwODo0OCBBTSIsInN1bnNldCI6IjA0OjMxIFBNIiwibW9vbnJpc2UiOiIxMToxMCBBTSIsIm1vb25zZXQiOiJObyBtb29uc2V0IiwibW9vbl9waGFzZSI6IldheGluZyBDcmVzY2VudCIsIm1vb25faWxsdW1pbmF0aW9uIjozNywiaXNfbW9vbl91cCI6MCwiaXNfc3VuX3VwIjowfSwiaG91ciI6W3sidGltZV9lcG9jaCI6MTcwNTUxODAwMCwidGltZSI6IjIwMjQtMDEtMTcgMjI6MDAiLCJ0ZW1wX2MiOi0xMi44LCJ0ZW1wX2YiOjguOSwiaXNfZGF5IjowLCJjb25kaXRpb24iOnsidGV4dCI6IlBhcnRseSBjbG91ZHkiLCJpY29uIjoiLy9jZG4ud2VhdGhlcmFwaS5jb20vd2VhdGhlci82NHg2NC9uaWdodC8xMTYucG5nIiwiY29kZSI6MTAwM30sIndpbmRfbXBoIjo5LjYsIndpbmRfa3BoIjoxNS41LCJ3aW5kX2RlZ3JlZSI6MjU3LCJ3aW5kX2RpciI6IldTVyIsInByZXNzdXJlX21iIjoxMDE2LjAsInByZXNzdXJlX2luIjoyOS45OSwicHJlY2lwX21tIjowLjAsInByZWNpcF9pbiI6MC4wLCJzbm93X2NtIjowLjAsImh1bWlkaXR5Ijo5MiwiY2xvdWQiOjU1LCJmZWVsc2xpa2VfYyI6LTIwLjQsImZlZWxzbGlrZV9mIjotNC43LCJ3aW5kY2hpbGxfYyI6LTIwLjQsIndpbmRjaGlsbF9mIjotNC43LCJoZWF0aW5kZXhfYyI6LTEyLjgsImhlYXRpbmRleF9mIjo4LjksImRld3BvaW50X2MiOi0xMy44LCJkZXdwb2ludF9mIjo3LjEsIndpbGxfaXRfcmFpbiI6MCwiY2hhbmNlX29mX3JhaW4iOjAsIndpbGxfaXRfc25vdyI6MCwiY2hhbmNlX29mX3Nub3ciOjAsInZpc19rbSI6MTAuMCwidmlzX21pbGVzIjo2LjAsImd1c3RfbXBoIjoxNi42LCJndXN0X2twaCI6MjYuOCwidXYiOjEuMCwic2hvcnRfcmFkIjoyLjM3LCJkaWZmX3JhZCI6MS4wM31dfV19fQ==
-  recorded_at: Wed, 17 Jan 2024 04:05:27 GMT
+        eyJsb2NhdGlvbiI6eyJuYW1lIjoi0JzQvtGB0LrQstCwIiwicmVnaW9uIjoiTW9zY293IENpdHkiLCJjb3VudHJ5IjoiUnVzc2lhIiwibGF0Ijo1NS43NiwibG9uIjozNy42MiwidHpfaWQiOiJFdXJvcGUvTW9zY293IiwibG9jYWx0aW1lX2Vwb2NoIjoxNzA1NTIxODEzLCJsb2NhbHRpbWUiOiIyMDI0LTAxLTE3IDIzOjAzIn0sImN1cnJlbnQiOnsibGFzdF91cGRhdGVkX2Vwb2NoIjoxNzA1NTIxNjAwLCJsYXN0X3VwZGF0ZWQiOiIyMDI0LTAxLTE3IDIzOjAwIiwidGVtcF9jIjotMTMuMCwidGVtcF9mIjo4LjYsImlzX2RheSI6MCwiY29uZGl0aW9uIjp7InRleHQiOiJQYXJ0bHkgY2xvdWR5IiwiaWNvbiI6Ii8vY2RuLndlYXRoZXJhcGkuY29tL3dlYXRoZXIvNjR4NjQvbmlnaHQvMTE2LnBuZyIsImNvZGUiOjEwMDN9LCJ3aW5kX21waCI6MTEuOSwid2luZF9rcGgiOjE5LjEsIndpbmRfZGVncmVlIjoyNDAsIndpbmRfZGlyIjoiV1NXIiwicHJlc3N1cmVfbWIiOjEwMTIuMCwicHJlc3N1cmVfaW4iOjI5Ljg4LCJwcmVjaXBfbW0iOjAuMCwicHJlY2lwX2luIjowLjAsImh1bWlkaXR5Ijo4NSwiY2xvdWQiOjc1LCJmZWVsc2xpa2VfYyI6LTE5LjYsImZlZWxzbGlrZV9mIjotMy4zLCJ2aXNfa20iOjEwLjAsInZpc19taWxlcyI6Ni4wLCJ1diI6MS4wLCJndXN0X21waCI6MTUuMywiZ3VzdF9rcGgiOjI0Ljd9LCJmb3JlY2FzdCI6eyJmb3JlY2FzdGRheSI6W3siZGF0ZSI6IjIwMjQtMDEtMTciLCJkYXRlX2Vwb2NoIjoxNzA1NDQ5NjAwLCJkYXkiOnsibWF4dGVtcF9jIjotMTAuMSwibWF4dGVtcF9mIjoxMy44LCJtaW50ZW1wX2MiOi0xNS44LCJtaW50ZW1wX2YiOjMuNiwiYXZndGVtcF9jIjotMTEuOCwiYXZndGVtcF9mIjoxMC43LCJtYXh3aW5kX21waCI6MTQuMSwibWF4d2luZF9rcGgiOjIyLjcsInRvdGFscHJlY2lwX21tIjowLjM0LCJ0b3RhbHByZWNpcF9pbiI6MC4wMSwidG90YWxzbm93X2NtIjowLjIyLCJhdmd2aXNfa20iOjkuNywiYXZndmlzX21pbGVzIjo2LjAsImF2Z2h1bWlkaXR5Ijo5MCwiZGFpbHlfd2lsbF9pdF9yYWluIjowLCJkYWlseV9jaGFuY2Vfb2ZfcmFpbiI6NjgsImRhaWx5X3dpbGxfaXRfc25vdyI6MCwiZGFpbHlfY2hhbmNlX29mX3Nub3ciOjQzLCJjb25kaXRpb24iOnsidGV4dCI6IkxpZ2h0IHNub3ciLCJpY29uIjoiLy9jZG4ud2VhdGhlcmFwaS5jb20vd2VhdGhlci82NHg2NC9kYXkvMzI2LnBuZyIsImNvZGUiOjEyMTN9LCJ1diI6MS4wfSwiYXN0cm8iOnsic3VucmlzZSI6IjA4OjQ4IEFNIiwic3Vuc2V0IjoiMDQ6MzEgUE0iLCJtb29ucmlzZSI6IjExOjEwIEFNIiwibW9vbnNldCI6Ik5vIG1vb25zZXQiLCJtb29uX3BoYXNlIjoiV2F4aW5nIENyZXNjZW50IiwibW9vbl9pbGx1bWluYXRpb24iOjM3LCJpc19tb29uX3VwIjowLCJpc19zdW5fdXAiOjB9LCJob3VyIjpbeyJ0aW1lX2Vwb2NoIjoxNzA1NDg5MjAwLCJ0aW1lIjoiMjAyNC0wMS0xNyAxNDowMCIsInRlbXBfYyI6LTEyLjEsInRlbXBfZiI6MTAuMiwiaXNfZGF5IjoxLCJjb25kaXRpb24iOnsidGV4dCI6Ik92ZXJjYXN0IiwiaWNvbiI6Ii8vY2RuLndlYXRoZXJhcGkuY29tL3dlYXRoZXIvNjR4NjQvZGF5LzEyMi5wbmciLCJjb2RlIjoxMDA5fSwid2luZF9tcGgiOjEyLjEsIndpbmRfa3BoIjoxOS40LCJ3aW5kX2RlZ3JlZSI6Mjc5LCJ3aW5kX2RpciI6IlciLCJwcmVzc3VyZV9tYiI6MTAwOC4wLCJwcmVzc3VyZV9pbiI6MjkuNzcsInByZWNpcF9tbSI6MC4wLCJwcmVjaXBfaW4iOjAuMCwic25vd19jbSI6MC4wLCJodW1pZGl0eSI6ODcsImNsb3VkIjoxMDAsImZlZWxzbGlrZV9jIjotMjAuNCwiZmVlbHNsaWtlX2YiOi00LjgsIndpbmRjaGlsbF9jIjotMjAuNCwid2luZGNoaWxsX2YiOi00LjgsImhlYXRpbmRleF9jIjotMTIuMSwiaGVhdGluZGV4X2YiOjEwLjIsImRld3BvaW50X2MiOi0xMy44LCJkZXdwb2ludF9mIjo3LjEsIndpbGxfaXRfcmFpbiI6MCwiY2hhbmNlX29mX3JhaW4iOjAsIndpbGxfaXRfc25vdyI6MCwiY2hhbmNlX29mX3Nub3ciOjAsInZpc19rbSI6MTAuMCwidmlzX21pbGVzIjo2LjAsImd1c3RfbXBoIjoxNy4yLCJndXN0X2twaCI6MjcuNiwidXYiOjEuMCwic2hvcnRfcmFkIjo5NC43LCJkaWZmX3JhZCI6NDUuNjh9XX1dfX0=
+  recorded_at: Wed, 17 Jan 2024 20:04:13 GMT
 recorded_with: VCR 6.2.0

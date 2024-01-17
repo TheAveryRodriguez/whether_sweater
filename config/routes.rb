@@ -10,6 +10,8 @@ Rails.application.routes.draw do
       get "/forecast", to: "forecasts#index"
       resources :users, only: [:create]
       resources :sessions, only: [:create]
+      # resources :road_trips, only: [:create]
+      post "/road_trip", to: "road_trips#create"
     end
   end
 end

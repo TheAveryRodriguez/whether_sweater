@@ -31,8 +31,8 @@ RSpec.describe Roadtrip, type: :model do
         User.create!(create_user)
 
         params = {
-          origin: "Cincinatti,OH",
-          destination: "Chicago,IL",
+          origin: "Conway,AR",
+          destination: "Dallas,TX",
           api_key: "wrong_key"
         }
 

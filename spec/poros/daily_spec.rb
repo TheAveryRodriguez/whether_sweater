@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Daily do
   it "exists" do
     attributes = {
-      date: "11-11-2023",
+      date: "01-16-2024",
       astro: {
         sunset: "12:12",
         sunrise: "11:11"
@@ -21,7 +21,7 @@ RSpec.describe Daily do
     daily_weather = Daily.new(attributes)
 
     expect(daily_weather).to be_a(Daily)
-    expect(daily_weather.date).to eq("11-11-2023")
+    expect(daily_weather.date).to eq("01-16-2024")
     expect(daily_weather.sunrise).to eq("11:11")
     expect(daily_weather.sunset).to eq("12:12")
     expect(daily_weather.max_temp).to eq(99.9)

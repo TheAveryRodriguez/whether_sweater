@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe MapquestService do
   describe "Class Methods" do
     context ".location_format", :vcr do
-      it "returns geolocation information after getting an address" do
+      it "returns information after getting an address" do
         location = MapquestService.get_coordinates("conway,ar")
 
         expect(location).to be_a(Hash)

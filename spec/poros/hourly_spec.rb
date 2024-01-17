@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Hourly do
   it "exists" do
     attributes = {
-      time: "10-10-2023 00:00",
+      time: "01-16-2024 00:00",
       temp_f: 99.9,
       condition: {
         text: "sunny",
@@ -23,7 +23,7 @@ RSpec.describe Hourly do
   context "format_time" do
     it "only give the hours and min" do
       attributes = {
-        time: "11-11-2023 07:07",
+        time: "01-16-2024 03:33",
         temp_f: 99.9,
         condition: {
           text: "sunny",
@@ -33,7 +33,7 @@ RSpec.describe Hourly do
 
       hourly_weather = Hourly.new(attributes)
 
-      expect(hourly_weather.format_time("11-11-2023 07:07")).to eq("07:07")
+      expect(hourly_weather.format_time("01-16-2024 03:33")).to eq("03:33")
     end
   end
 end
